@@ -79,14 +79,12 @@
     
     color: #222;
     text-align: center;
-    border-bottom: 0.1rem solid #ccc;
-    padding-bottom: 1.1rem;
-    padding-top: 1.2rem;
 
 }
 .til{
     font-size: 20px;
     text-align: center;
+    padding: 10px;
 }
 .wspace{
     background-color: white;
@@ -94,5 +92,5 @@
     text-align: center;
 }
 .citylist{
-    padding: 20px;
+    padding: 2px 20px;
 }

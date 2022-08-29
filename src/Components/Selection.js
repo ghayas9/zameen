@@ -6,7 +6,10 @@ const Selection = ()=>{
         'Islamabad',
         'peshawar',
         'lahore',
-        'karachi'
+        'karachi',
+        'Multan',
+        'Wah',
+        'Sahiwal'
     ]
     const [sl,setsl]= useState(0)
     return(
