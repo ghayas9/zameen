@@ -69,22 +69,21 @@ const Selection = ()=>{
                             Popular Cities
                         </div>
                         <div className="wspace">
-                            icon
-                        </div>
+                        <i class="fa-solid fa-angle-up"></i>                       </div>
                         <div className="citylist">
                         {
                             city.map((e,i)=>{
                                 return(
                                     <div className="row">
                                         <div className="col-6">{e}</div>
-                                        <div className="col-6">{i}</div>
+                                        <div className="col-6">{'('}{i+898}{")"}</div>
                                     </div>
                                 )
                             })
                         }
                         </div>
                         <div className="wspace">
-                            icon
+                        <i class="fa-solid fa-angle-down"></i> 
                         </div>
                     </div>
                 </div>

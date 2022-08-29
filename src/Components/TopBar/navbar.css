@@ -74,8 +74,15 @@
 }
 
 .cng{
-    background-color: rgb(202, 202, 202);
-    width: 200px;
+    background-color: #ccc;
+    width: 240px;
+    
+    color: #222;
+    text-align: center;
+    border-bottom: 0.1rem solid #ccc;
+    padding-bottom: 1.1rem;
+    padding-top: 1.2rem;
+
 }
 .til{
     font-size: 20px;
