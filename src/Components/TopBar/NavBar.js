@@ -56,8 +56,11 @@ const NavBar = ()=>{
                     </li>
                     </ul>
                     <div class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
-                        <button class="btn  " type="submit">Search</button>
+                        <div style={{backgroundColor:'blue',border:'1px solid white',padding:'2px'}}>
+                        <input class="form-control mr-sm-2" type="search" placeholder="Property ID" aria-label="Search" style={{}}/>
+                        </div>
+                        
+                        <button class="btn " style={{color:'black',backgroundColor:'white',padding:'2px 10px'}}> <span style={{color:'black',padding:'0px 2px',fontWeight:'bold'}}>+</span> Add Property</button>
                         
                         
                         <ul class="navbar-nav ">

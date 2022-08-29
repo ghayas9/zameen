@@ -1,0 +1,40 @@
+.navbar {
+    background-color: green;
+    padding: 0px 20px;
+}
+.navbar *,.nav-item{
+    color: white;
+    font-size: 15px;
+}
+.navbar * :hover{
+    color: white;
+}
+.dropdown-item{
+    color: black;
+}
+.dropdown-item:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+.subbar,.subbarin ,.subbarm,.subm{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.subbar{
+    background-color: rgb(243, 245, 245);
+    padding: 0px 20px;
+}
+.subbarin {
+/* background-color: brown; */
+}
+
+.subbarm *{
+    padding: 0px 10px;
+}
+.subm *{
+    border-left: 2px solid rgb(100, 99, 99);
+    /* border-: 2px solid black; */
+}
