@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 
 const Selection = ()=>{
     const city= [
@@ -7,6 +8,7 @@ const Selection = ()=>{
         'lahore',
         'karachi'
     ]
+    const [sl,setsl]= useState(0)
     return(
         <div className="container-fluid bck">
             <div className="row">
@@ -22,16 +24,24 @@ const Selection = ()=>{
                             <div className="row align-items-center" style={{alignItems:'center'}}>
                             <div className="col-3 ">
                                 <div className="pd bl">
-                                <div className="tt ">city</div>
+                                <div className="tt " style={{textAlign:'left'}}>city</div>
                                 <div class="dropdown">
                                     <div class=" dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Islamabad
+                                        {city[sl]}
                                     </div>
 
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                        <li><div class="dropdown-item" >Action</div></li>
-                                        <li><div class="dropdown-item" >Another action</div></li>
-                                        <li><div class="dropdown-item" >Something else here</div></li>
+                                        {
+                                            city.map((e,i)=>{
+                                                return(
+                                                    <li onClick={()=>{
+                                                        setsl(i)
+                                                    }}><div class="dropdown-item" >{e}</div></li>
+                                                )
+                                            })
+                                        }
+                                        
+                                       
                                     </ul>
                                     </div>
                                 </div>
@@ -41,10 +51,11 @@ const Selection = ()=>{
                                 <div className="tt">
                                     LOCATION
                                 </div>
+                                <input type="text" className="sr"/>
                             </div>
                         </div>
-                        <div className="col-3">
-                            <div className="pd" style={{backgroundColor:'green'}}>
+                        <div className="col-3" >
+                            <div className="pd d-flex align-items-center justify-content-center" style={{backgroundColor:'green',height:'50px'}}>
                                 FIND
                             </div>
                         </div>
@@ -58,13 +69,22 @@ const Selection = ()=>{
                             Popular Cities
                         </div>
                         <div className="wspace">
-                            icn
+                            icon
                         </div>
                         <div className="citylist">
-
+                        {
+                            city.map((e,i)=>{
+                                return(
+                                    <div className="row">
+                                        <div className="col-6">{e}</div>
+                                        <div className="col-6">{i}</div>
+                                    </div>
+                                )
+                            })
+                        }
                         </div>
                         <div className="wspace">
-                            icn
+                            icon
                         </div>
                     </div>
                 </div>

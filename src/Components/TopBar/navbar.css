@@ -64,3 +64,28 @@
     padding: 10px;
     margin-top: 20px;
 }
+.sr{
+    border: none;
+    outline: none;
+}
+.sr:focus{
+    border: none;
+    outline: none;
+}
+
+.cng{
+    background-color: rgb(202, 202, 202);
+    width: 200px;
+}
+.til{
+    font-size: 20px;
+    text-align: center;
+}
+.wspace{
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+.citylist{
+    padding: 20px;
+}
